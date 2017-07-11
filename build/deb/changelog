@@ -1,3 +1,9 @@
+nvidia-docker (1.0.1-1) UNRELEASED; urgency=medium
+
+  * Compiled NVIDIA Docker for 17.04 to fix missing sysv-rc and file-rc deps
+
+ -- Stephen Fox <social@stevefox.io>  Tue, 11 Jul 2017 14:56:52 +0000
+
 nvidia-docker (1.0.1-1) trusty; urgency=low
 
   * Support for Docker 17.03 including EE and CE (Closes: #323, #324)
