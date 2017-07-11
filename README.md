@@ -1,3 +1,17 @@
+# Note for Ubuntu 17.04
+
+This repo has been patched to compile the nvidia-docker debian installation package for Ubuntu 17.04.
+
+To build the package, simply run `make deb`. The `*.deb` package will be written to the `dist/` directory.
+
+This fixes the dependency error when installing `nvidia-docker` from NVIDIA's official `*.deb` package which only has support up to Ubuntu 16.04:
+
+```bash
+The following packages have unmet dependencies:
+ nvidia-docker : Depends: sysv-rc (>= 2.88dsf-24) but it is not installable or
+                          file-rc (>= 0.8.16) but it is not installable
+```
+
 # NVIDIA Docker
 
 This repository includes utilities to build and run NVIDIA Docker images.
@@ -8,7 +22,7 @@ This repository includes utilities to build and run NVIDIA Docker images.
 
 # Documentation
 
-The full documentation is available on the [repository wiki](https://github.com/NVIDIA/nvidia-docker/wiki).  
+The full documentation is available on the [repository wiki](https://github.com/NVIDIA/nvidia-docker/wiki).
 A good place to start is to understand [why NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker/wiki/Why%20NVIDIA%20Docker) is needed in the first place.
 
 # Quick start
